@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slideshow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .slideshow-container {
+            max-width: auto;
+            position: relative;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        img, video {
+            width: 1000px;
+            height: 1100px;
+        }
+        .caption {
+            text-align: center;
+            color: #333;
+            font-size: 50px;
+            font-style: italic;
+            padding: 8px 12px;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-grid;
+            cursor: pointer;
+        }
+        .dot.active {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slideshow-container">
+    <!-- Slides -->
+    <div class="mySlides active">
+        <img src="one.jpg" alt="Photo 1">
+        <div class="caption">With a smile that could rival the sun and
+          <br>charm that outshines the stars,
+          <br>behold the legend of my dear Honney :
+          <br>heart-stealer, laughter-bringer, and
+          <br>the reason for countless smiles.
+          <br>Use dots for next and use play
+          <br>button to play videos.
+
+
+        </div>
+    </div>
+    <div class="mySlides">
+        <video controls>
+            <source src="two.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">Muaahhhhh !!!</div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="devil.jpg" alt="Photo 1">
+        <div class="caption">Too hot to be this devilish :></div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="candid you.jpg" alt="Photo 1">
+        <div class="caption">Please have burger dates with me, someday.....</div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="sleepy.jpg" alt="Photo 1">
+        <div class="caption">Can I stare you sleeping?</div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="cute.jpg" alt="Photo 1">
+        <div class="caption"></div>
+    </div>
+
+    <div class="mySlides">
+        <video controls>
+            <source src="lovely.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">Would love you childish</div>
+    </div>
+
+    <div class="mySlides">
+        <video controls>
+            <source src="acting.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">Will kiss your lips the way you show them </div>
+    </div>
+
+    <div class="mySlides">
+        <video controls>
+            <source src="video 1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">copy le aao copy</div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="dangerous.jpg" alt="Photo 1">
+        <div class="caption">Darta bhi h m aapse </div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="vc.jpg" alt="Photo 1">
+        <div class="caption">Can these vc be all mine </div>
+    </div>
+
+    <div class="mySlides active">
+        <img src="we.jpg" alt="Photo 1">
+        <div class="caption">Would cherrish the memories forever,
+          <br>Thanks for all of these</div>
+    </div>
+
+
+    <div class="mySlides active">
+        <img src="smartest.jpg" alt="Photo 1">
+        <div class="caption">irresistibly charming :)</div>
+    </div>
+
+
+    <div class="mySlides active">
+        <img src="perfect.jpg" alt="Photo 1">
+        <div class="caption">To my wholesome perfect man !!!</div>
+    </div>
+
+    <div class="mySlides">
+        <video controls>
+            <source src="complete.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="caption">You complete me :)</div>
+    </div>
+    <div class="mySlides active">
+        <img src="last.jpg" alt="Photo 1">
+        <div class="caption">Perfect slideshow ni bnn paya
+          <br>Still, aage jitni fotos hongi, I Will
+          <br>keep adding to it, It will be my repository.
+          <br>Byee, Love Ya :) !!!
+        </div>
+    </div>
+
+    <!-- Add more slides as needed -->
+
+    <!-- Navigation dots -->
+    <div class="navigation">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <!-- Add more dots as needed -->
+    <div class="navigation">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <!-- Add more dots as needed -->
+    <div class="navigation">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <!-- Add more dots as needed -->
+    <div class="navigation">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <!-- Add more dots as needed -->
+        <div class="navigation">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <div class="navigation">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <div class="navigation">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <div class="navigation">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+
+    </div>
+</div>
+
+<script>
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function showSlides(n) {
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove("active");
+        }
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].classList.remove("active");
+        }
+        slides[n].classList.add("active");
+        dots[n].classList.add("active");
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    document.querySelectorAll('.dot').forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide(index);
+        });
+    });
+</script>
+
+</body>
+</html>
